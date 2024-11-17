@@ -1,0 +1,124 @@
+{
+    "users": {
+        "userid_1":{
+            "username": "admin",
+            "full name": "Admin",
+            "email": "admin@example.com",
+            "registration_date": "2020-01-01",
+            "is_active": true,
+            "password": "pass123",
+            "role": "admin"
+        },
+        "userid_2":{
+            "username": "judge",
+            "full name": "Judge",
+            "email": "judge@example.com",
+            "registration_date": "2024-11-13",
+            "is_active": true,
+            "password": "pass123",
+            "role": "judge",
+            "competitions": []
+        },
+        "userid_3":{
+            "username": "contestant",
+            "full name": "Contestant",
+            "email": "contestant@example.com",
+            "registration_date": "2024-11-13",
+            "is_active": true,
+            "password": "pass123",
+            "role": "contestant",
+            "competitions": []
+        },
+        "userid_4":{
+            "username": "john",
+            "full name": "John Doe",
+            "email": "john.doe@example.com",
+            "registration_date": "2024-11-13",
+            "is_active": true,
+            "password": "pass123",
+            "role": "contestant",
+            "competitions": []
+        },
+        "userid_5": {
+            "username": "alice",
+            "full name": "Alice Smith",
+            "email": "alice.smith@example.com",
+            "registration_date": "2024-11-14",
+            "is_active": true,
+            "password": "pass123",
+            "role": "contestant",
+            "competitions": []
+        },
+        "userid_6": {
+            "username": "bob",
+            "full name": "Bob Johnson",
+            "email": "bob.johnson@example.com",
+            "registration_date": "2024-11-15",
+            "is_active": true,
+            "password": "pass123",
+            "role": "contestant",
+            "competitions": []
+        },
+        "userid_7": {
+            "username": "charlie",
+            "full name": "Charlie Brown",
+            "email": "charlie.brown@example.com",
+            "registration_date": "2024-11-16",
+            "is_active": true,
+            "password": "pass123",
+            "role": "contestant",
+            "competitions": []
+        }
+    },
+    "competition": {
+        "competitionid_1": {
+            "name": "Competition 1",
+            "description": "Description of Competition 1",
+            "start_date": "2024-11-13",
+            "end_date": "2024-11-20",
+            "is_active": true,
+            "teams": {
+                "teamid_1": {
+                    "name": "Team 1",
+                    "captain": "userid_4",
+                    "members": ["userid_4", "userid_5"],
+                    "photos":{
+                        "photo_1": {
+                            "title": "Photo 1",
+                            "description": "Description of Photo 1",
+                            "timestamp": "2024-11-13",
+                            "url": "https://example.com/photo1.jpg",
+                            "latitude": 40.7128,
+                            "longitude": -74.0060,
+                            "uploaded_by": "userid_4",
+                            "scores": {
+                                "userid_2": 8
+                            }
+                        }
+                    },
+                "teamid_2": {
+                    "name": "Team 2",
+                    "captain": "userid_7",
+                    "members": ["userid_6", "userid_7"],
+                    "photos":{
+                        "photo_2": {
+                            "title": "Photo 2",
+                            "description": "Description of Photo 2",
+                            "timestamp": "2024-11-14",
+                            "url": "https://example.com/photo2.jpg",
+                            "latitude": 34.0522,
+                            "longitude": -118.2437,
+                            "uploaded_by": "userid_7",
+                            "scores": {
+                                "userid_2": 7
+                                }
+                            }
+                        }
+                    },
+                    "judges": ["userid_2"]
+                }
+            
+            }
+        }
+    }
+}
